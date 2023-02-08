@@ -1,0 +1,173 @@
+body{
+    background-image: url(https://images.pexels.com/photos/9511241/pexels-photo-9511241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-family: 'Arimo', sans-serif;
+}
+/* --------------------------------------------------------------------------------- */
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.all{
+    position: relative;
+    height:630px ;
+    min-width: 250px;
+}
+
+form{
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    background-color: #fdfdfdda;
+    border-radius: 50px;
+    box-shadow: 
+    1px -1px 0 black, 
+    -3px 6px 1px #ED1250
+}
+
+.textDiv{
+    width: 250px;
+    text-align: center;
+    font-size: 15px;
+    background-color: #ffffffd7;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 
+    1px -1px 0 #ED1250, 
+    -3px 6px 1px rgb(0, 0, 0)
+}
+/* --------------------------------------------------------------------------------- */
+
+.dressPosition{
+    position: absolute;
+}
+.dress1{
+    z-index: 2;
+}
+.dress2{
+    z-index: 3;
+}
+.dress3{
+    z-index: 1;
+}
+.girls{
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+}
+.girl1{
+    left: 2px;
+}
+.girl2{
+    display: none;
+    left: 3px;
+    top:3px
+}
+
+/* --------------------------------------------------------------------------------- */
+
+h1,.animate-grow {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 50px;
+    letter-spacing: .40em;
+    text-shadow: 
+        1px -1px 0 #ED1250, 
+        -3px 6px 1px rgb(0, 0, 0) 
+}
+
+label,h4{
+    color: #ED1250;
+    font-weight: bolder;
+}
+
+.btn{
+    font-family: 'Arimo', sans-serif;
+    font-weight: bolder;
+    margin:  0 auto;
+    text-align: center;
+    box-shadow: 
+    1px -1px 0 #ED1250, 
+    -3px 6px 1px rgb(0, 0, 0) ;
+    color: #ED1250;
+    background-color: #ffffffd7;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.displayBtn{
+    padding: 10px;
+    background-color: #ffffff33;
+    text-align: center;
+    display: none;
+    border-radius: 50px;
+}
+/* --------------------------------------------------------------------------------- */
+
+.change{
+    transition: 3s linear;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.textVictory{
+    display: none;
+    margin: 0px;
+    color: #ED1250;
+	animation: animate_grow 2s infinite;
+}
+
+
+@keyframes animate_grow {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+	50% {
+		transform: scale3d(1.05, 1.05, 1.05);
+	}
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+
+input{
+    font-size: 17px;
+}
+.bottom{
+    position: fixed;
+    bottom: 5px;
+}
+/* --------------------------------------------------------------------------------- */
+@media all and (max-width:500px){
+
+
+    body{
+        background: linear-gradient(to bottom, #F0ECE3 50%, #C7B198 50%);
+     }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1,.textVictory{
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width:300px){
+
+form{
+    width: 200px;
+}
+
+}
